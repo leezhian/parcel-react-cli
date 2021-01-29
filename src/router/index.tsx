@@ -2,11 +2,11 @@
  * @Author: kim
  * @Date: 2021-01-28 17:21:02
  * @LastEditors: kim
- * @LastEditTime: 2021-01-29 14:16:38
+ * @LastEditTime: 2021-01-29 17:51:52
  * @Description: 路由
  */
 import React, { useMemo } from 'react'
-import { Route, Switch, Redirect, BrowserRouter } from 'react-router-dom'
+import { Route, Switch, Redirect, Router } from 'dva/router'
 import routes from './route.config';
 
 interface routeObj {
@@ -56,7 +56,7 @@ const RouteMap = (props: any) => {
   }, [routes])
 
   return (
-    <BrowserRouter>
+    <Router history={props.history}>
       <Switch>
         {
           routeList.map((item, key) => (
@@ -65,7 +65,7 @@ const RouteMap = (props: any) => {
         }
         <Redirect to='/404' />
       </Switch>
-    </BrowserRouter>
+    </Router>
   )
 }
 

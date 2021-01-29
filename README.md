@@ -2,10 +2,34 @@
 
 使用  [parcel 2.0](https://v2.parceljs.org/) 打包，其中已包含配置一下依赖：
 
-- react 框架
-- dva
-- scss 样式
-- typescript
+- react  + react-loadable
+- [dva](https://dvajs.com/)
+- scss
+- [typescript](https://www.tslang.cn/docs/handbook/basic-types.html)
+
+
+
+## 📖使用
+
+### 路由配置
+
+`src/router/route.config.ts`
+
+```typescript
+// 配置格式，例如
+{
+    name: '首页',
+    path: '/',
+    exact: true,
+    component: Loadable(() => import('../pages/Home'))
+}
+```
+
+
+
+## 错误处理
+
+路由错误会默认跳转到 `404.tsx`，可通过编辑 `404.tsx` 自定义错误页面。
 
 
 

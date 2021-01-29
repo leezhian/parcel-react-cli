@@ -27,7 +27,6 @@
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
     "@types/react-loadable": "^5.5.4",
-    "@types/react-router-dom": "^5.1.7",
     "parcel": "^2.0.0-beta.1",
     "react-loadable": "^5.5.0",
     "sass": "^1.32.5",
@@ -35,9 +34,10 @@
   },
   "dependencies": {
     "classnames": "^2.2.6",
+    "dva": "^2.4.1",
+    "history": "^5.0.0",
     "lodash": "^4.17.20",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-router-dom": "^5.2.0"
+    "react-dom": "^17.0.1"
   }
 }

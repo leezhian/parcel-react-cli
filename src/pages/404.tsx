@@ -2,11 +2,11 @@
  * @Author: kim
  * @Date: 2021-01-28 18:29:50
  * @LastEditors: kim
- * @LastEditTime: 2021-01-29 15:49:39
+ * @LastEditTime: 2021-01-29 17:55:20
  * @Description: 404页面
  */
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link } from 'dva/router'
 import noFoundImg from '../assets/images/404.png'
 import './style.scss'
 
@@ -16,9 +16,7 @@ const NoFoundPage = () => {
       <div className='no-block'>
         <img className='no-image' src={noFoundImg} alt="" />
         <h1 className='no-title'>Sorry, the page you visited does not exist.</h1>
-        <Link to='/'>
-          <button className='no-back_btn'>Back Home</button>
-        </Link>
+        <Link to='/'><button className='no-back_btn'>Back Home</button></Link>
       </div>
     </div>
   )
