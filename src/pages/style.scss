@@ -1,0 +1,31 @@
+.no-found-page {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .no-block {
+    text-align: center;
+  }
+
+  .no-image{
+    display: block;
+    width: 200px;
+    margin: auto;
+  }
+
+  .no-title {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+
+  .no-back_btn {
+    margin-top: 10px;
+    padding: 8px 20px;
+    border-radius: 4px;
+    border: none;
+    color: #fff;
+    background-color: #a08cad;
+  }
+}

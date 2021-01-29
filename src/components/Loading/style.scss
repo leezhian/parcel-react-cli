@@ -1,0 +1,53 @@
+@keyframes loading-spinner {
+  0% {
+    opacity: 1
+  }
+
+  100% {
+    opacity: 0
+  }
+}
+
+.loading-page {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .loading-block {
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    overflow: hidden;
+  }
+
+  .loading-spinner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform: translateZ(0) scale(0.8);
+    backface-visibility: hidden;
+    transform-origin: 0 0;
+
+    div {
+      box-sizing: content-box;
+      left: 47.5px;
+      top: 24px;
+      position: absolute;
+      animation: loading-spinner linear 1s infinite;
+      background: #85a2b6;
+      width: 5px;
+      height: 12px;
+      border-radius: 2.5px / 6px;
+      transform-origin: 2.5px 26px;
+
+      @for $i from 1 through 12 {
+        &:nth-of-type(#{$i}) {
+          transform: rotate(($i - 1) * 30deg);
+          animation-delay: $i * 0.0834 - 1s;
+        }
+      }
+    }
+  }
+}

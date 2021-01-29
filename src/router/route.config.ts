@@ -2,7 +2,7 @@
  * @Author: kim
  * @Date: 2021-01-28 17:31:22
  * @LastEditors: kim
- * @LastEditTime: 2021-01-29 14:17:58
+ * @LastEditTime: 2021-01-29 16:39:34
  * @Description: 路由配置文件
  */
 import Loadable from '../utils/loadable'
