@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "es6", // 为了ts输出为es6再交给babel处理
+    "module": "esnext",
+    "outDir": "./dist",
+    "strict": true,
+    "jsx": "react",
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "lib": ["es6", "dom"],
+    "paths": {
+      "@/*": ["./src/*"],
+      "~*": ["./src/*"]
+    }
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
