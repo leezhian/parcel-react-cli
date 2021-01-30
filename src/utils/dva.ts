@@ -6,8 +6,19 @@ interface basicObject {
   [propName: string]: any;
 }
 
+interface modelType {
+  namespace: string;
+  state: basicObject;
+  effects?: {
+    [propName: string]: any;
+  };
+  reducers?: {
+    [propName: string]: any;
+  };
+}
+
 interface dvaOptions {
-  models?: basicObject;
+  models?: Array<modelType>;
   [propName: string]: any;
 }
 
@@ -21,7 +32,7 @@ export const createApp = ((): Function => {
       history: createBrowserHistory()
     })
 
-    opt.models && opt.models.forEach((model: basicObject) => app.model(model))
+    opt.models && opt.models.forEach((model: modelType) => app.model(model))
 
     app.router(route)
     app.start('#root')

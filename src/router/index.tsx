@@ -2,7 +2,7 @@
  * @Author: kim
  * @Date: 2021-01-28 17:21:02
  * @LastEditors: kim
- * @LastEditTime: 2021-01-29 17:51:52
+ * @LastEditTime: 2021-01-30 23:27:17
  * @Description: 路由
  */
 import React, { useMemo } from 'react'
@@ -51,7 +51,6 @@ const RouteMap = (props: any) => {
       routeArr = routeArr.concat(compileRoute(p))
     })
 
-    console.log(routeArr)
     return routeArr
   }, [routes])
 
