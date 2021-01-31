@@ -1,3 +1,5 @@
+import { Effect, Reducer } from 'dva'
+
 export type StateType = {
   value?: string
 };
@@ -5,8 +7,12 @@ export type StateType = {
 export type TestModelType = {
   namespace: string;
   state: StateType;
-  effects: {};
-  reducers: {};
+  effects: {
+    [propName: string]: Effect;
+  };
+  reducers: {
+    [propName: string]: Reducer<StateType>;
+  };
 };
 
 const TestModel: TestModelType = {
