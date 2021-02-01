@@ -1,4 +1,4 @@
-import dva from 'dva'
+import dva, { Effect, Reducer } from 'dva'
 import { createBrowserHistory } from 'history'
 import route from '../router/index'
 
@@ -10,10 +10,10 @@ interface modelType {
   namespace: string;
   state: basicObject;
   effects?: {
-    [propName: string]: any;
+    [propName: string]: Effect;
   };
   reducers?: {
-    [propName: string]: any;
+    [propName: string]: Reducer<basicObject>;
   };
 }
 

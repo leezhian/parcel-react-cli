@@ -6,6 +6,7 @@
 - [dva](https://dvajs.com/)
 - scss
 - [typescript](https://www.tslang.cn/docs/handbook/basic-types.html)
+- lodash 库
 
 
 
@@ -13,7 +14,7 @@
 
 ### 路由配置
 
-`src/router/route.config.ts`
+在 `src/router/route.config.ts` 配置即可。
 
 ```typescript
 // 配置格式，例如
@@ -27,9 +28,32 @@
 
 
 
+## models导入导出问题
+
+需要 `dva` 注册的 `model` 需要在 `src/models/index.ts`  文件中进行导入导出，记住 `index.ts` 导出必须是数组，即可完成自动注册。
+
+
+
 ## 错误处理
 
 路由错误会默认跳转到 `404.tsx`，可通过编辑 `404.tsx` 自定义错误页面。
+
+
+
+## 代理
+
+在根目录新建 `.proxyrc` 文件，配置如下：
+
+```json
+{
+  "/api": {
+    "target": "http://localhost:8000/",
+    "pathRewrite": {
+      "^/api": ""
+    }
+  }
+}
+```
 
 
 
