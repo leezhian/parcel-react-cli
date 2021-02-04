@@ -9,11 +9,15 @@ export type TestProps = {
 };
 
 const HelloWorld: FC<TestProps> = props => {
-  return (<div>
-    {props.test}
-  </div>)
+  const { test } = props
+
+  return (
+    <div>
+      {test}
+    </div>
+  )
 }
 
 export default connect(({ testModel }: ConnectState) => ({
-  test: testModel.value
+  test: testModel.value,
 }))(HelloWorld)

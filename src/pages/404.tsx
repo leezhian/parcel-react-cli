@@ -2,7 +2,7 @@
  * @Author: kim
  * @Date: 2021-01-28 18:29:50
  * @LastEditors: kim
- * @LastEditTime: 2021-02-04 16:19:41
+ * @LastEditTime: 2021-02-04 18:02:28
  * @Description: 404页面
  */
 import React from 'react'
@@ -16,7 +16,9 @@ const NoFoundPage = () => {
       <div className={style['no-block']}>
         <img className={style['no-image']} src={noFoundImg} alt="" />
         <h1 className={style['no-title']}>Sorry, the page you visited does not exist.</h1>
-        <Link to='/'><button className={style['no-back_btn']}>Back Home</button></Link>
+        <Link to="/">
+          <button type="button" className={style['no-back_btn']}>Back Home</button>
+        </Link>
       </div>
     </div>
   )

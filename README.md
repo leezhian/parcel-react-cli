@@ -7,6 +7,7 @@
 - scss
 - [typescript](https://www.tslang.cn/docs/handbook/basic-types.html)
 - lodash 库
+- eslint
 
 
 

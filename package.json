@@ -11,7 +11,8 @@
   "scripts": {
     "start": "parcel serve ./src/index.html",
     "watch": "parcel watch ./src/index.html",
-    "build": "parcel build ./src/index.html"
+    "build": "parcel build ./src/index.html",
+    "lint": "eslint --ext .js,.ts,.jsx,.tsx --format=pretty ./src"
   },
   "keywords": [],
   "author": "",
@@ -28,6 +29,14 @@
     "@types/react-dom": "^17.0.0",
     "@types/react-loadable": "^5.5.4",
     "autoprefixer": "^9.5.1",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.19.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-formatter-pretty": "^4.0.0",
+    "eslint-plugin-compat": "^3.9.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.22.0",
     "parcel": "^2.0.0-beta.1",
     "postcss-modules": "^1.4.1",
     "react-loadable": "^5.5.0",

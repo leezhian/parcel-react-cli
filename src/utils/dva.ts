@@ -23,16 +23,16 @@ interface dvaOptions {
 }
 
 export const createApp = ((): Function => {
-  let app: any;
+  let app: any
   return (opt: dvaOptions = {}) => {
     if (app) return false
 
     app = dva({
       ...opt,
-      history: createBrowserHistory()
+      history: createBrowserHistory(),
     })
 
-    opt.models && opt.models.forEach((model: modelType) => app.model(model))
+    opt.models && (opt.models.forEach((model: modelType) => app.model(model)))
 
     app.router(route)
     app.start('#root')

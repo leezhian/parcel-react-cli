@@ -3,5 +3,5 @@ import './assets/scss/normal.scss'
 import models from './models/index'
 
 createApp({
-  models
+  models,
 })
