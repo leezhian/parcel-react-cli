@@ -12,6 +12,24 @@
 
 ## 📖使用
 
+**安装依赖**
+
+```bash
+npm install
+```
+
+**运行开发环境**
+
+```bash
+npm run start
+```
+
+**打包**
+
+```bash
+npm run build
+```
+
 ### 路由配置
 
 在 `src/router/route.config.ts` 配置即可。

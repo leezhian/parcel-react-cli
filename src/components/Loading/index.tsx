@@ -2,17 +2,17 @@
  * @Author: kim
  * @Date: 2021-01-29 10:55:13
  * @LastEditors: kim
- * @LastEditTime: 2021-01-29 16:38:53
+ * @LastEditTime: 2021-02-04 16:20:00
  * @Description: loading
  */
 import React from 'react'
-import './style.scss'
+import style from './style.scss'
 
 const Loading = () => {
   return (
-    <div className="loading-page">
-      <div className="loading-block">
-        <div className="loading-spinner">
+    <div className={style['loading-page']}>
+      <div className={style['loading-block']}>
+        <div className={style['loading-spinner']}>
           <div></div>
           <div></div>
           <div></div>
