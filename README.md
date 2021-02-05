@@ -31,6 +31,18 @@ npm run start
 npm run build
 ```
 
+**代码规范检查**
+
+```bash
+npm run lint
+```
+
+**jest测试**
+
+```bash
+npm run test
+```
+
 ### 路由配置
 
 在 `src/router/route.config.ts` 配置即可。

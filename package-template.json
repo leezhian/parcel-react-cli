@@ -1,5 +1,5 @@
 {
-  "name": "parcel-react-cli",
+  "name": "{{projectName}}",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.html",

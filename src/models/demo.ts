@@ -4,7 +4,7 @@ export type StateType = {
   value?: string,
 }
 
-export type TestModelType = {
+export type DemoModelType = {
   namespace: string;
   state: StateType;
   effects: {
@@ -15,8 +15,8 @@ export type TestModelType = {
   };
 }
 
-const TestModel: TestModelType = {
-  namespace: 'testModel',
+const DemoModel: DemoModelType = {
+  namespace: 'demoModel',
   state: {
     value: 'Hello World!',
   },
@@ -24,4 +24,4 @@ const TestModel: TestModelType = {
   reducers: {},
 }
 
-export default TestModel
+export default DemoModel

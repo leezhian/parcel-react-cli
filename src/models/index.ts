@@ -1,3 +1,3 @@
-import test from './test'
+import demo from './demo'
 
-export default [test]
+export default [demo]

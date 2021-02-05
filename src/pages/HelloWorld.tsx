@@ -1,6 +1,6 @@
 import React, { FC } from 'react'
 import { connect, Dispatch } from 'dva'
-import type { StateType } from '../models/test'
+import type { StateType } from '../models/demo'
 import type { ConnectState } from '../models/connext'
 
 export type TestProps = {
@@ -18,6 +18,6 @@ const HelloWorld: FC<TestProps> = props => {
   )
 }
 
-export default connect(({ testModel }: ConnectState) => ({
-  test: testModel.value,
+export default connect(({ demoModel }: ConnectState) => ({
+  test: demoModel.value,
 }))(HelloWorld)

@@ -1,5 +1,5 @@
-import type { StateType } from './test'
+import type { StateType } from './demo'
 
 export type ConnectState = {
-  testModel: StateType;
+  demoModel: StateType;
 }
